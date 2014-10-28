@@ -15,7 +15,7 @@ background:linear-gradient(to right,#92C742,#7AEA7E);
 margin-left:20px;
 height:100px;
 width:120px;
-background:url('logo2.jpg') no-repeat;
+background:url('../img/logo2.jpg') no-repeat;
 background-size:120px 100px;
 float:left;
 }

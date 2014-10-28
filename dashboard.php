@@ -5,7 +5,7 @@ echo '
 <html>
 <head>
 <title>ShopVote</title>
-<link rel="stylesheet" type="text/css" href="style.css">
+<link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body>
 <div id="header">
