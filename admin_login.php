@@ -13,7 +13,7 @@ $count = mysqli_num_rows($result);
 if($count==1){
 session_start();
 $_SESSION['user']=$uname;
-header("Location: dashboard.php");
+header("Location: admin_dashboard.php");
 }
 else{
 echo "Invalid Login";
