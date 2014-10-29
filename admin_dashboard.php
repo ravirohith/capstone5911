@@ -254,7 +254,7 @@ echo '
 <div class="modal fade" id="addCategoryModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
   <div class="modal-dialog">
     <div class="modal-content">
-     <form action="" method="POST" id="signin_form">
+     <form action="insert_category.php" method="POST" id="signin_form">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
         <h3 class="modal-title">Add a Category</h3>
@@ -267,7 +267,7 @@ echo '
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Save changes</button>
+        <button type="submit" class="btn btn-primary">Save changes</button>
       </div>
      </form> 
     </div><!-- /.modal-content -->
