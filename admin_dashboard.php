@@ -191,7 +191,7 @@ echo '
 <div class="modal fade" id="addAdminModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
   <div class="modal-dialog">
     <div class="modal-content">
-     <form action="" method="POST" id="signin_form">
+     <form action="insert_admin.php" method="POST" id="signin_form">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
         <h3 class="modal-title">Add an Admin</h3>
@@ -199,20 +199,20 @@ echo '
       <div class="modal-body">
         <div class="row">
             <div class="col-md-2"><h4><label for="username" style="padding-top:8px">Username:</label></h4></div>
-            <div class="col-md-6"><input type="text" class="form-control" name="username" id="username" placeholder="username" style="width: 100%"></input></div>
+            <div class="col-md-6"><input type="text" class="form-control" name="username" id="username" placeholder="username" style="width: 100%" required></input></div>
         </div>
         <div class="row">
             <div class="col-md-2"><h4><label for="password" style="padding-top:8px">Password</label></h4></div>
-            <div class="col-md-6"><input type="password" class="form-control" name="password" id="password" placeholder="password" style="width: 100%"></input></div>
+            <div class="col-md-6"><input type="password" class="form-control" name="password" id="password" placeholder="password" style="width: 100%" required></input></div>
         </div>
         <div class="row">
             <div class="col-md-2"><h4><label for="password" style="padding-top:8px">Confirm</label></h4></div>
-            <div class="col-md-6"><input type="password" class="form-control" name="confirm" id="confirm" placeholder="confirm password" style="width: 100%"></input></div>
+            <div class="col-md-6"><input type="password" class="form-control" name="confirm" id="confirm" placeholder="confirm password" style="width: 100%" required></input></div>
         </div>
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Save changes</button>
+        <button type="submit" class="btn btn-primary">Save changes</button>
       </div>
      </form> 
     </div><!-- /.modal-content -->
@@ -222,7 +222,7 @@ echo '
 <div class="modal fade" id="addQuestionModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
   <div class="modal-dialog">
     <div class="modal-content">
-     <form action="" method="POST" id="signin_form">
+     <form action="insert_question.php" method="POST" id="signin_form">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
         <h3 class="modal-title">Add a question</h3>
@@ -234,7 +234,7 @@ echo '
 		</div>
 		<div class="row">
   			<div class="col-md-2"><h4><label for="category" style="padding-top:4px">Category:</label></h4></div>
-  			<div class="col-md-6"><select class="form-control" style="width: 100%">';
+  			<div class="col-md-6"><select class="form-control" style="width: 100%" name ="quest_cat">';
 			$result = mysqli_query($con,"SELECT * FROM categories");
 			while($row=mysqli_fetch_array($result)){
 			    echo '<option value="' .$row['categoryid']. '">' .$row['categoryname']. '</option>';
@@ -244,7 +244,7 @@ echo '
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Save changes</button>
+        <button type="submit" class="btn btn-primary">Save changes</button>
       </div>
      </form> 
     </div><!-- /.modal-content -->

@@ -9,7 +9,7 @@ echo '
 </head>
 <body>
 <div id="header">
-<a href="admin_index.php"><div id="logo">
+<a href="index.php"><div id="logo">
 </div></a>
 <div id="signin">
 <form action="admin_login.php" method="POST" id="signin_form">

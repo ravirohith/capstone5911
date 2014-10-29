@@ -11,6 +11,7 @@ echo '
 <div id="header">
 <a href="dashboard.php"><div id="logo">
 </div></a>
+<div id="welcome">Welcome,' .$_SESSION['user']. '</div>
 <div id="signin">
 <form action="logout.php" method="POST" id="signin_form">
 <input type="submit" value="logout" id="sout_submit" style="width:100px;background:#619AE8;border:none;"></input>
