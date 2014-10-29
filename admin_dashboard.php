@@ -10,7 +10,7 @@ echo '
 </head>
 <body>
 <div id="header">
-<a href="dashboard.php"><div id="logo">
+<a href="admin_dashboard.php"><div id="logo">
 </div></a>
 <div id="welcome">Welcome,' .$_SESSION['user']. '</div>
 <div id="signout">
