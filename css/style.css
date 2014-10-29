@@ -1,7 +1,11 @@
 body{
-//background:-webkit-linear-gradient(#A1F0B3,#2CDE55,#A1F0B3);
 padding:0px;
 margin:0px;
+-webkit-animation:rot 1s;
+}
+
+@-webkit-keyframes rot{
+0%{margin-left:100%;};
 }
 
 .table{
@@ -112,6 +116,11 @@ bottom:0px;
 position:absolute;
 padding-left:50px;
 padding-top:50px;
+-webkit-animation:drot 1s;
+}
+
+@-webkit-keyframes drot{
+0%{margin-left:100%;};
 }
 
 a{
