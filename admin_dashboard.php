@@ -234,11 +234,12 @@ echo '
 		</div>
 		<div class="row">
   			<div class="col-md-2"><h4><label for="category" style="padding-top:4px">Category:</label></h4></div>
-  			<div class="col-md-6"><select class="form-control" style="width: 100%">
-                <option value="1">Animals</option>
-                <option value="2">Environment</option>
-                <option value="3">LGBT</option>
-            </select></div>
+  			<div class="col-md-6"><select class="form-control" style="width: 100%">';
+			$result = mysqli_query($con,"SELECT * FROM categories");
+			while($row=mysqli_fetch_array($result)){
+			    echo '<option value="' .$row['categoryid']. '">' .$row['categoryname']. '</option>';
+				}
+            echo '</select></div>
 		</div>
       </div>
       <div class="modal-footer">
