@@ -1,4 +1,6 @@
 <?php
+session_start();
+if(isset($_SESSION['user'])){
 echo '
 <html>
 <head>
@@ -10,8 +12,9 @@ echo '
 <div id="header">
 <a href="dashboard.php"><div id="logo">
 </div></a>
-<div id="signin">
-<form action="logout.php" method="POST" id="signin_form">
+<div id="welcome">Welcome,' .$_SESSION['user']. '</div>
+<div id="signout">
+<form action="admin_logout.php" method="POST">
 <input type="submit" value="logout" id="sout_submit" style="width:100px;background:#619AE8;border:none;"></input>
 </form>
 </div>
@@ -274,4 +277,9 @@ echo '
 <script src="js/bootstrap.min.js"></script>
 
 </html>';
+}
+else{
+session_destroy();
+header("Location: admin_index.php");
+}
 ?>

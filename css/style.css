@@ -37,6 +37,15 @@ position:relative;
 padding-top:20px;
 }
 
+#signout{
+height:50px;
+float:right;
+color:white;
+margin-right:30px;
+position:relative;
+padding-top:20px;
+}
+
 #signin_form>input{
 border-radius:3px;
 padding:4px;
@@ -86,6 +95,12 @@ border-radius:5px;
 margin-top:5px;
 padding-left:4px;
 border:1px solid transparent;
+}
+
+#welcome{
+font-size:30px;
+width:20%;
+margin:0 auto;
 }
 
 #sup_submit{
