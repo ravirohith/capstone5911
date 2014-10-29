@@ -4,6 +4,10 @@ padding:0px;
 margin:0px;
 }
 
+.table{
+padding-right:10%;
+}
+
 #header{
 height:100px;
 width:100%;
@@ -113,4 +117,3 @@ padding-top:50px;
 a{
 color:black;
 }
-
