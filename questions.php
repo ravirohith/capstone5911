@@ -21,7 +21,7 @@ echo '
 <a href="questions.php">Questions</a>
 </div>
 <div id="d-cont"><form method="POST" action="questsave.php">';
-$con = mysqli_connect("localhost","root","","shopvote");
+$con = mysqli_connect("localhost","root","root","shopvote");
 if(mysqli_connect_errno())
 echo "Failed" . mysqli_connect_error();
 $result_main = mysqli_query($con,"SELECT * FROM categories");
