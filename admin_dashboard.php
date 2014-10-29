@@ -42,7 +42,7 @@ echo '
         	</tr>
     	</thead>
     	<tbody>';
-    		$con = mysqli_connect("localhost","root","","shopvote");
+    		$con = mysqli_connect("localhost","root","root","shopvote");
     		$count = 0;
 			if(mysqli_connect_errno())
 			echo "Failed" . mysqli_connect_error();
@@ -82,7 +82,7 @@ echo '
         	</tr>
     	</thead>
     	<tbody>';
-            $con = mysqli_connect("localhost","root","","shopvote");
+            $con = mysqli_connect("localhost","root","root","shopvote");
             $count = 0;
             if(mysqli_connect_errno())
             echo "Failed" . mysqli_connect_error();
@@ -123,7 +123,7 @@ echo '
         	</tr>
     	</thead>
     	<tbody>';
-            $con = mysqli_connect("localhost","root","","shopvote");
+            $con = mysqli_connect("localhost","root","root","shopvote");
             $count = 0;
             if(mysqli_connect_errno())
             echo "Failed" . mysqli_connect_error();
@@ -164,7 +164,7 @@ echo '
         	</tr>
     	</thead>
     	<tbody>';
-            $con = mysqli_connect("localhost","root","","shopvote");
+            $con = mysqli_connect("localhost","root","root","shopvote");
             $count = 0;
             if(mysqli_connect_errno())
             echo "Failed" . mysqli_connect_error();

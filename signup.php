@@ -11,7 +11,7 @@ $st2 = $_POST['ad2'];
 $city = $_POST['city'];
 $state = $_POST['state'];
 $zipcode = $_POST['zip'];
-$con = mysqli_connect("localhost","root","","shopvote");
+$con = mysqli_connect("localhost","root","root","shopvote");
 if(mysqli_connect_errno())
 echo "Failed" . mysqli_connect_error();
 mysqli_query($con,"INSERT INTO usersdb(fname,lname,username,password,gender,address1,address2,state,city,zipcode) VALUES('" .$fname. "','" .$lname. "','" .$uname. "','" .$pwd. "','" .$gender. "','" .$st1. "','" .$st2. "','" .$city. "','" .$state. "'," .$zipcode. ")");

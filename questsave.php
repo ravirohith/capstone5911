@@ -1,7 +1,7 @@
 <?php
 session_start();
 if(isset($_SESSION['user'])){
-$con = mysqli_connect("localhost","root","","shopvote");
+$con = mysqli_connect("localhost","root","root","shopvote");
 if(mysqli_connect_errno())
 echo "Failed" . mysqli_connect_error();
 $result = mysqli_query($con,"SELECT * FROM questions");
