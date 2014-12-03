@@ -63,6 +63,9 @@ padding:4px;
 width:175px;
 height:25px;
 margin-top:0px;
+}
+
+input[type='submit']{
 cursor:pointer;
 }
 
@@ -108,7 +111,6 @@ border-radius:5px;
 margin-top:5px;
 padding-left:4px;
 border:1px solid transparent;
-cursor:pointer;
 }
 
 input[type='radio']{
