@@ -12,7 +12,7 @@ $result = mysqli_query($con,"SELECT * FROM admin WHERE username='" . $uname . "'
 $count = mysqli_num_rows($result);
 if($count==1){
 session_start();
-$_SESSION['user']=$uname;
+$_SESSION['admin_user']=$uname;
 header("Location: admin_dashboard.php");
 }
 else{

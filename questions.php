@@ -60,25 +60,25 @@ while($row = mysqli_fetch_array($result)) {
 	echo '<div class="quest">'. $row['question'] . '</div><div class="stat_bar"><div class="yes" style="width:'.$yes_width.'%;"></div><div class="neutral" style="width:'.$neu_width.'%;"></div><div class="no" style="width:'.$no_width.'%;"></div></div>';
 	if($data['response']==1)
 		echo '<br><br><input type="radio" name='.$row["q_id"].' id="'.$row["q_id"].'1" value="1" checked="checked">
-								<label for="'.$row["q_id"].'1"><span></span>Yes</label>
+								<label for="'.$row["q_id"].'1"><span class="yes_rad"></span>Yes</label>
 								<input type="radio" name='.$row["q_id"].' id="'.$row["q_id"].'0" value="0">
-								<label for="'.$row["q_id"].'0"><span></span>Neutral</label>
+								<label for="'.$row["q_id"].'0"><span class="neu_rad"></span>Neutral</label>
 								<input type="radio" name='.$row["q_id"].' id="'.$row["q_id"].'-1" value="-1">
-								<label for="'.$row["q_id"].'-1"><span></span>No</label><br><br>';
+								<label for="'.$row["q_id"].'-1"><span class="no_rad"></span>No</label><br><br>';
 	else if($data['response']==-1)
 		echo  '<br><br><input type="radio" name='.$row["q_id"].' id="'.$row["q_id"].'1" value="1">
-								<label for="'.$row["q_id"].'1"><span></span>Yes</label>
+								<label for="'.$row["q_id"].'1"><span class="yes_rad"></span>Yes</label>
 								<input type="radio" name='.$row["q_id"].' id="'.$row["q_id"].'0" value="0">
-								<label for="'.$row["q_id"].'0"><span></span>Neutral</label>
+								<label for="'.$row["q_id"].'0"><span class="neu_rad"></span>Neutral</label>
 								<input type="radio" name='.$row["q_id"].' id="'.$row["q_id"].'-1" value="-1" checked="checked">
-								<label for="'.$row["q_id"].'-1"><span></span>No</label><br><br>';
+								<label for="'.$row["q_id"].'-1"><span class="no_rad"></span>No</label><br><br>';
 	else
 				echo  '<br><br><input type="radio" name='.$row["q_id"].' id="'.$row["q_id"].'1" value="1">
-								<label for="'.$row["q_id"].'1"><span></span>Yes</label>
+								<label for="'.$row["q_id"].'1"><span class="yes_rad"></span>Yes</label>
 								<input type="radio" name='.$row["q_id"].' id="'.$row["q_id"].'0" value="0" checked="checked">
-								<label for="'.$row["q_id"].'0"><span></span>Neutral</label>
+								<label for="'.$row["q_id"].'0"><span class="neu_rad"></span>Neutral</label>
 								<input type="radio" name='.$row["q_id"].' id="'.$row["q_id"].'-1" value="-1">
-								<label for="'.$row["q_id"].'-1"><span></span>No</label><br><br>';
+								<label for="'.$row["q_id"].'-1"><span class="no_rad"></span>No</label><br><br>';
 }
 }
 	echo '<br><br><input type="submit" value=""></submit></form></div>

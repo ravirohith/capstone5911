@@ -1,6 +1,6 @@
 <?php
 session_start();
-if(isset($_SESSION['user'])){
+if(isset($_SESSION['admin_user'])){
 echo '
 <html>
 <head>
@@ -12,7 +12,7 @@ echo '
 <div id="header">
 <a href="admin_dashboard.php"><div id="logo">
 </div></a>
-<div id="welcome">Welcome,' .$_SESSION['user']. '</div>
+<div id="welcome">Welcome,' .$_SESSION['admin_user']. '</div>
 <div id="signout">
 <form action="admin_logout.php" method="POST">
 <input type="submit" value="logout" id="sout_submit" style="width:100px;background:#619AE8;border:none;"></input>
@@ -96,7 +96,12 @@ echo '
                 <td>'.$row['fname']." ".$row['lname'].'</td>
                 <td>'.$row['address1']." ".$row['address2']." ".$row['city']." ".$row['state'].'</td>
                 <td>'.$row['zipcode'].'</td>
-                <td>';if($row['active'] == 1) echo "yes"; else echo "no"; echo '</td>   
+                <td>';
+				if($row['active'] == 1) 
+				echo "yes"; 
+				else 
+				echo "no";
+				echo '</td>   
                 <td>
             <button type="button" class="btn btn-info btn-sm" title="edit user"><span class="glyphicon glyphicon-edit"></span></button>
             <button type="button" class="btn btn-danger btn-sm" title="delete user"><span class="glyphicon glyphicon-trash"></span></button></td>       
